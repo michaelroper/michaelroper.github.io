@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/michaelroper
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://michael.roper.id.au
+  * I am michaelroper (https://keybase.io/michaelroper) on keybase.
+  * I have a public key with fingerprint 36F6 DB95 3AB0 31CA 1CC4  AA34 CF04 6A49 85B7 ADD0
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "36f6db953ab031ca1cc4aa34cf046a4985b7add0",
+            "host": "keybase.io",
+            "key_id": "cf046a4985b7add0",
+            "uid": "11039e8fe39e7a5cfbe6c26709ecde00",
+            "username": "michaelroper"
+        },
+        "service": {
+            "hostname": "michael.roper.id.au",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396515143,
+    "expire_in": 157680000,
+    "prev": "be592f82c6a1f2e9ec5bc8f12f5c42f8b86bb95e80a791be027f4327b752cb95",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMHuAnicbZFdSBRdHMZ3U8vXNVPqQhCR5sK3RJf52PnYjc2KQNIwS8U+pG3OmTPu
+4Dozzcyu+m6WGpoifVAZFV6EFn2ASXlhRYKEXWTSSyKahV8XgRfSRbaEoebZpS6C
+5mIOc57f8zzM/z+8Oc6WZL+EQmygS3pqfzu0ErSVercXhAmgSfWEJ0xUo9ghK2oV
+MnRDUS3CQzCczEnAzTIiIBkKihSELlFkXFAmXZzocgss4EVJIolcwq+ZUQeOAaKJ
+nIqG7/CHT5Hw7V/4YEygKJJxI0FG+M2LLJQB4iDN8aQbQQmRMdBEhirWIEzXKNAv
+ooCh6cggGnIJrIQUiJVwrP5PyhnDnIrkFIM4Rjc0S4NaAAN+y9I9Ub9Vr0cNtQj4
+fkX5gKJKeATYEEKGqWgq4aEwCS0lmk0xbo6lWMrF5BKoTlcM5FOiBMtzAomfaA0K
+4UiAWDctCzTkREqmEf4bFkBBpmiZhS4sAIEDeK5IIEXeTQFE0rzsYmge8CwNsYD7
+TXRa1QgPbrLEKhxpKlWqaAUNRDS8GqqMt9mTbBsTNkSXaEv6J/X3as3/E21PLiwu
+BOcrkhfuFJ091fNii6N2OGetpNQ78iD7SGPqNUdb3P0P73ebR/nFOm/BtnsZh4wv
+44Wfh2rZBI/3oH0lr5NnfkwWXzzTPHVsrqlka3BgMOWrfTTUmZZVubZztozV0//r
+v+mNnGhdBefptJbWuJfx5XSGfzprf98j4flcdkeRI/NyTiS01Ht45vHy8dTCvsku
+260rmXua09STDVen1sZ25I/393anV48U3yjKae3Zda7z7vXVmd7EwNzsdF7CfOb8
+62/5e8dWU1hiqbHRkRwZKD/QDDa9MSfahe7v7Z+W3+1TYdnixOBgS9PD2/p41r8f
+69si4Q7j2c9Z72jFOmzAF5I=
+=QH5k
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/michaelroper
+
+==================================================================
