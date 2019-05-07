@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://michaelroper.netlify.com/* https://michael.roper.id.au/:splat 301!
