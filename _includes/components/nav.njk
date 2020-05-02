@@ -1,0 +1,15 @@
+{% if navigation.header %}
+  <nav aria-label="primary">
+    <button id="nav_toggler" type="button" aria-expanded="true" aria-label="open navigation">Menu</button>
+
+    <ul class="nav_list">
+      {% for nav in navigation.header %}
+        <li class="nav_item">
+          <a href="{{ nav.link | url }}">
+            {{ nav.text }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif%}

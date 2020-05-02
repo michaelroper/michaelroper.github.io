@@ -1,0 +1,124 @@
+---
+layout: layouts/base
+---
+
+<!-- Page -->
+<div class="max-w-3xl p-6 mx-auto sm:p-8 md:p-16">
+
+    <section class="mt-8 first:mt-0">
+
+        <h2 class="mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase">
+            About Me
+        </h2>
+
+        <section class="mb-5 ">
+            {{ content | safe }}
+        </section>
+
+    </section>
+
+    <section class="mt-8 first:mt-0">
+
+        <h2 class="mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase ">
+            Experience
+        </h2>
+
+        {% for item in experience %}
+            <section class="mb-10">
+                <header class="px-10 py-4 -ml-10 border-b-2 border-teal-200 rounded-l-full shadow-lg bg-gray-00">
+                    <h3 class="text-lg font-bold leading-tight text-indigo-700">
+                        {{ item.company }}
+                    </h3>
+                    <p class="leading-tight ">
+                        <span class="text-base text-teal-500">{{ item.title }}</span>
+                        <span class="text-sm text-gray-500">{{ item.date }}</span>
+                    </p>
+                </header>
+
+                {% if item.description %}
+                    <p class="mt-2 leading-normal text-gray-700 text-md">
+                        {{ item.description }}
+                    </p>
+                {% endif %}
+
+                <ul class="p-5 mr-2 space-y-4 text-sm leading-normal list-outside border-l-2 border-teal-200 text-gray-70 rounded-b-l">
+                    {% for item in item.items %}
+                        <li class="">
+                            {{ item }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endfor %}
+
+    </section>
+
+    <section class="mt-8 first:mt-0">
+
+        <!-- To keep in the same column -->
+        <div class="break-inside-avoid">
+
+            <h2 class="mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase">
+                Education
+            </h2>
+            {% for item in education %}
+                <section class="mb-5 ">
+                    <header>
+                        <h3 class="text-lg font-semibold leading-tight text-gray-700">
+                            <em>{{ item.title }}</em>,
+                            {{ item.company }}
+                        </h3>
+                        <p class="leading-normal text-gray-700 text-md">
+                            {{ item.date }}
+                        </p>
+                    </header>
+                    <p class="mt-2 leading-normal text-gray-700 text-md">
+                        {{ item.description }}
+                    </p>
+                </section>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+    <section class="mt-8 first:mt-0">
+
+        <h2 class="mb-4 text-sm font-bold tracking-widest text-gray-500 uppercase ">
+            Skills
+        </h2>
+
+        <div class="grid grid-cols-2 divide-gray-400 divide-">
+            {% for item in skills %}
+                <section class="px-4 mb-5">
+                    <header>
+                        <h3 class="text-lg font-semibold leading-tight text-indigo-700">
+                            {{item.title}}
+                        </h3>
+                        {% if item.description %}
+                            <p class="leading-normal text-gray-700 text-md">
+                                {{item.description}}
+                            </p>
+                        {% endif %}
+
+                    </header>
+                    <div class="my-3 last:pb-2">
+
+                        <ul class="flex flex-wrap -mb-2 -mr-2 leading-normal text-md">
+                            {% for item in item.items %}
+                                <li class="px-2 mb-2 mr-2 text-xs text-orange-700 bg-orange-200 rounded ">
+                                    {{ item }}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+
+            {% endfor %}
+        </div>
+
+    </section>
+
+</div>
+
+<!-- end Page -->
