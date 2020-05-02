@@ -2,7 +2,13 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 const plugin = require("tailwindcss/plugin")
 
 module.exports = {
-  purge: ["./pages/**/*.md", "./pages/**/*.njk", "./includes/**/*.njk"],
+  purge: [
+    "./pages/**/*.md",
+    "./pages/**/*.njk",
+    "./includes/**/*.njk",
+    "./assets/**/*.svg",
+    "./assets/**/*.js",
+  ],
   theme: {
     extend: {
       fontFamily: {
