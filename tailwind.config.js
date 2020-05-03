@@ -5,7 +5,7 @@ module.exports = {
   purge: [
     "./pages/**/*.md",
     "./pages/**/*.njk",
-    "./includes/**/*.njk",
+    "./_includes/**/*.njk",
     "./assets/**/*.svg",
     "./assets/**/*.js",
   ],
