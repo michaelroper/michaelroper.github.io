@@ -1,5 +1,5 @@
 ---
-title: Resume
+title: The Resumé of Michael Roper
 socialDescription: The Resumé of Michael Roper
 permalink: /resume/index.html
 layout: layouts/resume
