@@ -24,6 +24,7 @@ module.exports = function (eleventyConfig) {
   }
 
   // Copy over folders with static assets e.g. images
+  eleventyConfig.addPassthroughCopy(".well-known")
   eleventyConfig.addPassthroughCopy("assets")
   eleventyConfig.addPassthroughCopy({
     "assets/favicons": "/",
