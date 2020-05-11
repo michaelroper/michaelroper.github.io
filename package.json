@@ -1,7 +1,9 @@
 {
   "name": "michael.roper.id.au",
-  "version": "1.0.0",
   "description": "Michael Roper's personal website.",
+  "author": "Michael Roper",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "start": "yarn run watch",
     "build": "NODE_ENV=production npm-run-all build:css build:html",
@@ -12,10 +14,8 @@
     "watch:html": "eleventy --serve --port=8080",
     "yup": "yarn upgrade-interactive --latest"
   },
-  "author": "Michael Roper",
-  "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "autoprefixer": "^9.7.2",
     "axios": "^0.19.2",
@@ -23,10 +23,10 @@
     "debug": "^4.1.1",
     "dotenv": "^8.1.0",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.22.0",
+    "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.4.2"
+    "tailwindcss": "^1.4.6"
   }
 }
