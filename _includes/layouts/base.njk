@@ -38,7 +38,7 @@
 
         <script async="async" src="https://cdn.splitbee.io/sb.js"></script>
 
-        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-97795-3"></script>
+        {# <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-97795-3"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -46,10 +46,11 @@
             }
             gtag('js', new Date());
             gtag('config', 'UA-97795-3');
-        </script>
+        </script> #}
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         {# End of Rel links #}
-        {% if site.environment == "production" %}
+
+        {# {% if site.environment == "production" %}
             {% set css %}
             {% include "../../assets/css/styles.css" %}
             {% endset %}
@@ -58,8 +59,9 @@
             </style>
         {% else %}
             <link href="/assets/css/styles.css" rel="stylesheet">
-        {% endif %}
+        {% endif %} #}
 
+        <link href="/assets/css/styles.css" rel="stylesheet">
     </head>
 
     <body class="text-lg leading-normal text-indigo-800 bg-gray-100">
