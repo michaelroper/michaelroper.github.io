@@ -6,27 +6,19 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run watch",
-    "build": "NODE_ENV=production npm-run-all build:css build:html",
-    "build:css": "postcss assets/css/tailwind.css -o assets/css/styles.css",
-    "build:html": "eleventy",
-    "watch": "npm-run-all --parallel watch:css watch:html",
-    "watch:css": "postcss assets/css/tailwind.css -o assets/css/styles.css --watch",
-    "watch:html": "eleventy --serve --port=8080",
+    "build": "NODE_ENV=production eleventy",
+    "watch": "eleventy --serve --port=8080",
     "yup": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "autoprefixer": "^9.7.2",
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
     "axios": "^0.21.1",
-    "cssnano": "^4.1.10",
-    "debug": "^4.1.1",
+    "debug": "^4.3.1",
     "dotenv": "^8.1.0",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.24.1",
-    "markdown-it": "^10.0.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.4.6"
+    "luxon": "^1.25.0",
+    "markdown-it": "^12.0.4"
   }
 }
