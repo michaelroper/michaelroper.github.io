@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   )
 
   // process the tailwind file
-  eleventyConfig.addPlugin(pluginTailwindCSS)
+  eleventyConfig.addPlugin(pluginTailwindCSS, { src: "assets/css/styles.css" })
 
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./utils/minify-js.js"))
