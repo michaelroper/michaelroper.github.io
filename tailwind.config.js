@@ -1,5 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
 const plugin = require("tailwindcss/plugin")
+const colors = require("tailwindcss/colors")
 
 module.exports = {
   purge: [
@@ -10,12 +11,21 @@ module.exports = {
     "./assets/**/*.js",
   ],
   theme: {
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      yellow: colors.amber,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      purple: colors.violet,
+      pink: colors.pink,
+    },
     extend: {
       fontFamily: {
         sans: ["inter", ...defaultTheme.fontFamily.sans],
-      },
-      colors: {
-        link: "#fbf3f3",
       },
     },
   },

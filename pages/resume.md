@@ -92,7 +92,7 @@ skills:
       - Sitefinity
   - title: Web platforms
     items:
-      - Google Marketing Platform (GA, Ads , Data Studio, etc)
+      - Google Marketing Platform (GA, Ads, Search Console, Data Studio)
       - Hotjar
       - Optimizely
       - SEMrush

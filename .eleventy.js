@@ -6,6 +6,9 @@ const absoluteUrl = require("@11ty/eleventy-plugin-rss/src/absoluteUrl")
 // Date and time
 const { DateTime } = require("luxon")
 
+// Tailwind plugin
+const pluginTailwindCSS = require("eleventy-plugin-tailwindcss")
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd")
@@ -14,6 +17,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("absoluteUrl", (href, base) =>
     absoluteUrl(href, base),
   )
+
+  // process the tailwind file
+  eleventyConfig.addPlugin(pluginTailwindCSS)
 
   // compress and combine js files
   eleventyConfig.addFilter("jsmin", require("./utils/minify-js.js"))
@@ -25,10 +31,13 @@ module.exports = function (eleventyConfig) {
 
   // Copy over folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy(".well-known")
-  eleventyConfig.addPassthroughCopy("assets")
+  eleventyConfig.addPassthroughCopy("assets/icons")
+  eleventyConfig.addPassthroughCopy("assets/images")
+  eleventyConfig.addPassthroughCopy("assets/js")
   eleventyConfig.addPassthroughCopy({
     "assets/favicons": "/",
   })
+
   return {
     dir: {
       input: ".",
