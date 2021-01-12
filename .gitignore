@@ -4,4 +4,3 @@ dist/
 node_modules/
 .netlify
 .env
-assets/css/styles.css
